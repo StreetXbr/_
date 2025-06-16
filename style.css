@@ -1,0 +1,378 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Inter", sans-serif;
+}
+
+#text{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#8B5E3C;
+    font-weight: bold;
+    color:#F4F7FA;
+}
+
+header{
+    max-width: 100vw;
+    background-color: #4B3621;
+    
+}
+
+
+
+header > nav > ul{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    list-style: none;
+    width: 50vw;
+    margin: auto;
+    font-weight: bold;
+    
+}
+
+#nav1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 8px;
+}
+
+a{
+    color:whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+}
+
+a:hover{
+    transition: .4s;
+    text-decoration: underline;
+    color:#D4BFAA; 
+}
+
+
+#logo{
+    background-image: url('logoStreetx.jpg');
+    height: 80px;
+    width: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#menu{
+    background-color: transparent;
+    display: none;
+    
+
+}
+
+#menu-list {
+         
+  display: flex; /* esconde o menu */
+  top: 120px; /* logo abaixo do botão */
+  
+
+  
+}
+
+#menu-list.show {
+  display: flex; /* mostra o menu */
+  flex-direction: row;
+  background-color: #422e1b;
+  box-shadow: 3px 0px 0px 0px #422e1b ;
+  position: absolute;
+}
+
+#menu-list li a {
+  color: white;
+}
+
+#menu-list li a:hover {
+  background-color:#4B3621 ;
+}
+
+#catalogo{
+   
+    text-align: center;
+    height: 60px;
+    max-width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    cursor: pointer;
+    background-color:#4B3621 ;
+    font-weight: bold;
+    box-shadow: 0px 1px 1px 1px #422e1b ;
+}
+
+
+#conteiner{
+    height: 400px;
+    max-width: 85vw;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    padding: 10px;
+}
+
+#item{
+    background-image: url('Promoção\ Camisetas\ STREETX\ por\ 74\,99.png');
+    background-size: contain;
+    height: 400px;
+    background-position: center;
+    width: 34vw;
+    margin-left: 10px;
+}
+
+#breve{
+    background-image: url('brevenovidades.png');
+    background-size: contain;
+    height: 400px;
+    background-position: center;
+    width: 34vw;
+}
+
+
+
+#content{
+    height: 700px;
+    max-width: 85vw;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1C1C;
+    background-size: cover;
+    position: relative;
+}
+
+#titulo{
+    color: whitesmoke;
+    margin-bottom: 10px;
+    background-color: #4B3621;
+    max-width: 700px;
+    padding: 20px;
+    margin-right: 60px;
+    margin: auto;
+}
+
+#imagens{
+    background-size: cover;
+    height: 550px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+#item1,#item2,#item3,#item4,#item5,#item6,#item7,#item8,#item9,#item10,#item11,#item12 {
+    height: 550px;
+    width: 550px;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#item1{
+    background-image: url('img/item1.jpg');
+    display: block;
+}
+
+#item2{
+    background-image: url('img/item2.jpeg');
+    display: none;
+}
+
+#item3{
+    background-image: url('img/item3.jpeg');
+    display: none;
+}
+
+#item4{
+    background-image: url('img/item4.jpeg');
+    display: none;
+}
+
+#item5{
+    background-image: url('img/item5.jpeg');
+    display: none;
+}
+
+#item6{
+    background-image: url('img/item6.jpeg');
+    display: none;
+}
+
+#item7{
+    background-image: url('img/item7.jpeg');
+    display: none;
+}
+
+#item8{
+    background-image: url('img/item8.jpeg');
+    display: none;
+}
+
+#item9{
+    background-image: url('img/item9.jpeg');
+    display: none;
+}
+
+#item10{
+    background-image: url('img/item10.jpeg');
+    display: none;
+}
+
+#item11{
+    background-image: url('img/item11.jpeg');
+    display: none;
+}
+
+#item12{
+    background-image: url('img/item12.jpeg');
+    display: none;
+}
+
+.material-symbols-outlined{
+    color: whitesmoke;
+    background-color: #4B3621;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0px 5px 0px 5px;
+    display: flex;
+}
+
+.material-symbols-outlined:hover{
+    background-color: #422e1b;
+    color: #1C1C1C;
+    transition: .4s;
+}
+
+#ant,
+#prox {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#ant {
+  left: 0;
+  margin-left: 200px;
+}
+
+#prox {
+  right: 0;
+  margin-right: 200px;
+}
+
+
+#setas{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 50vw;
+}
+
+#texto{
+    height: 500px;
+    max-width: 85vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('fundo.jpg');
+    background-size: cover;
+    color: white;
+}
+
+#texto h1{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;;
+
+}
+
+#texto p{
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 10px;
+    border: 5px double black ;
+
+
+}
+
+
+#rodape{
+    max-width: 100vw;
+    display: block;
+    height: 100px;
+    margin: auto;
+    background-color:#4B3621;
+}
+
+#nav2{
+    max-width: 100vw;
+    align-items: cente;
+    display: flex;
+}
+
+#rodape ul{
+    width: 30vw;
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    height: 50px;
+    color: #F5EBDD;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#rodape li:hover{
+     transition: .4s;
+     text-decoration: underline;
+     color:#F5EBDD; 
+}
+
+
+#marca{
+    background-image: url('x.png');
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+#msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-weight: bold;
+    border-top: 5px double black;
+}
